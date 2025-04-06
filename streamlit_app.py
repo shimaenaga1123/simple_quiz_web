@@ -2,10 +2,6 @@ from math import floor
 from time import time
 import streamlit as st
 
-
-def rotl(x, k):
-    return (x << k) | (x >> (64 - k))
-
 def get():
     def _splitmix(x):
         x = (x + 0x9E3779B97F4A7C15) & 0xFFFFFFFFFFFFFFFF
